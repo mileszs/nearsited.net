@@ -83,7 +83,8 @@ a:hover { color: #036; }
 
 body {
   background: #fff url(../img/eye_chart.png) no-repeat top right; 
-  font-family: helvetica, arial, clean, sans-serif
+  font-family: helvetica, arial, clean, sans-serif;
+  border-top: 4px solid #49B900;
 }
 
 a {
