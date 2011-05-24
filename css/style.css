@@ -84,42 +84,68 @@ a:hover { color: #036; }
 body {
   background: #fff url(../img/eye_chart.png) no-repeat top right; 
   font-family: helvetica, arial, clean, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
   border-top: 4px solid #49B900;
 }
 
-a {
-  color: #607890;
+a, a:visited {
+  color: #308126;
   text-decoration: none;
 }
 
 a:hover {
-  color: #7797B8;
+  color: #49B900;
 }
 
 
 header {
-  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  padding-top: 30px;
   text-align: right;
+  font-size: 20px;
+  z-index: 10;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
 }
 
 header img {
   margin-right: 10px;
 }
 
-#header-line {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 10px solid #999;
+section {
+  min-height: 768px
 }
 
-p#intro {
+section#hello h1, section#projects h1, section#contact h1 {
+  font-family: 'Sigmar One', arial, serif;
+  font-size: 108px;
+  height: 108px;
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 20px;
+  margin: 40px 0;
 }
 
-p#intro span#name {
+section#hello p, section#contact p {
+  text-align: left;
+  padding: 20px;
+  margin: 30px auto;
+  width: 600px;
+}
+
+span.my-name {
   font-weight: bold;
+}
+
+section {
+  padding-top: 100px;
+}
+
+section#hello, section#contact {
+  padding-top: 200px;
 }
 
 .screenshot-row {
@@ -128,7 +154,7 @@ p#intro span#name {
 
 .screenshot {
   width: 300px;
-  height: 480px;
+  height: 300px;
   overflow: hidden;
   color: #efefef;
   -moz-border-radius: 15px;
@@ -140,19 +166,20 @@ p#intro span#name {
 }
 
 .screenshot-top {
-  height: 400px;
+  height: 240px;
 }
 
 .screenshot-info {
   background-color: rgba(50,50,50,0.95);
   text-align: center;
   overflow: hidden;
-  height: 80px;
+  height: 60px;
+
 }
 
 .screenshot-blurb {
-  height: 80px;
-  padding-top: 25px;
+  height: 60px;
+  padding-top: 14px;
 }
 
 .screenshot-blurb a {
@@ -160,14 +187,14 @@ p#intro span#name {
 }
 
 .screenshot-more {
-  height: 400px;
+  height: 240px;
 }
 
 .screenshot-more p {
   text-align: left;
-  padding: 0 20px;
-  font-size: 16px;
-  line-height: 24px;
+  padding: 0 14px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 footer {
@@ -175,6 +202,7 @@ footer {
   color: #999;
   border-top: 1px solid #ccc;
   margin-top: 50px;
+  font-size: 12px;
 }
 
 footer p {
