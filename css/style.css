@@ -106,14 +106,18 @@ header {
   margin-left: -400px;
   height: 60px;
   width: 800px;
-  font-size: 20px;
+  padding: 20px;
   z-index: 10;
   background-color: #fff;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 
 header nav {
   display: inline;
   float: left;
+  font-size: 20px;
 }
 
 header nav ul {
