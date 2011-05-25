@@ -82,7 +82,7 @@ a:hover { color: #036; }
  */
 
 body {
-  background: #fff url(../img/eye_chart.png) no-repeat top right; 
+  background: #fff url(../img/eye_chart.png) no-repeat top right fixed; 
   font-family: helvetica, arial, clean, sans-serif;
   font-size: 20px;
   line-height: 30px;
