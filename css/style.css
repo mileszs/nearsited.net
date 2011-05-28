@@ -86,18 +86,25 @@ body {
   font-family: helvetica, arial, clean, sans-serif;
   font-size: 20px;
   line-height: 30px;
-  border-top: 4px solid #49B900;
 }
 
 a, a:visited {
   color: #308126;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
   color: #49B900;
 }
 
+#header-border {
+  border-top: 4px solid #49B900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 header {
   position: fixed;
@@ -114,6 +121,7 @@ header {
   -moz-border-bottom-left-radius: 15px;
   -webkit-border-bottom-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  border-top: 4px solid #49B900;
 }
 
 header nav {
@@ -207,6 +215,15 @@ section#hello, section#contact {
 
 .screenshot-blurb a {
   font-size: 24px;
+}
+
+section#projects a, section#projects a:visited {
+  color: #49B900;
+  text-decoration: none;
+}
+
+section#projects a:hover {
+  color: #308126;
 }
 
 .screenshot-more {
