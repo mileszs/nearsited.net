@@ -123,6 +123,7 @@ body {
   font-family: helvetica, arial, clean, sans-serif;
   font-size: 20px;
   line-height: 30px;
+  color: #444;
 }
 
 a, a:visited {
@@ -291,33 +292,12 @@ section#contact p.button-holder {
 }
 
 a.button {
-	font: bold 48px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-	display: inline-block;
-	color: white;
-	padding: 5px 10px 5px;
-	white-space: nowrap;
-	text-decoration: none;
-	cursor: pointer;
-	background: #4096EE url(../img/button_overlay.png) repeat-x scroll 0 0;
-	border-style: none;
-	text-align: center;
-	overflow: visible;
-}
- 
-a.button:hover,
-a.button:focus {
-	background-position: 0 -50px;
-	color: white;
-}
- 
-a.button:active {
-	background-position: 0 -100px;
-	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.7);
-	-webkit-box-shadow: none;
+  font-family: 'Sigmar One', arial, serif;
+  font-size: 72px;
+  height: 108px;
+  text-align: center;
+  margin: 40px 0;
+  color: #333;
+  opacity: 0.7;
+  margin-left: -5000px;
 }

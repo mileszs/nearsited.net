@@ -34,4 +34,14 @@ $(function() {
       $('header').css('background-color', 'transparent');
     }
   });
+
+  $('a.button').animate({ marginLeft: '0' }, 2000);
+
+  $('a.button').hover(function(ev) {
+    $('a.button').fadeTo('slow', 1);
+    $('a.button span.bracket').fadeTo('slow', 0.2);
+  }, function(ev) {
+    $('a.button').fadeTo('slow', 0.8);
+    $('a span.bracket').fadeTo('fast', 1);
+  });
 });
