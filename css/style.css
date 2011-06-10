@@ -293,11 +293,10 @@ section#contact p.button-holder {
 
 a.button {
   font-family: 'Sigmar One', arial, serif;
-  font-size: 72px;
+  font-size: 0;
   height: 108px;
   text-align: center;
   margin: 40px 0;
   color: #333;
   opacity: 0.7;
-  margin-left: -5000px;
 }

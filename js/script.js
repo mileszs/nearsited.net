@@ -28,7 +28,7 @@ $(function() {
   });
 
   // Animate email me link on load
-  $('a.button').animate({ marginLeft: '0' }, 2000);
+  $('a.button').animate({ fontSize: '72' }, 2000);
 
   // animate email link on hover
   $('a.button').hover(function(ev) {
