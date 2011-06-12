@@ -1,4 +1,6 @@
 /* Author: Miles Z. Sterrett */
+//= require <jquery-1.5.1.min>
+//= require <jquery.scrollTo-1.4.2-min>
 
 $(function() {
   // projects animated info
