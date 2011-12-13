@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sprocketize -I js/libs/ js/*.js > js/all.js
