@@ -1,12 +1,13 @@
 /* Author: Miles Z. Sterrett */
 //= require <jquery-1.5.1.min>
 //= require <jquery.scrollTo-1.4.2-min>
+//= require <jquery.hoverIntent.min>
 
 $(function() {
   // projects animated info
   var topBaseHeight = $('.screenshot-top').css('height');
   var infoBaseHeight = $('.screenshot-info').css('height');
-  $('.screenshot').hover(function() {
+  $('.screenshot').hoverIntent(function() {
     $(this).find('.screenshot-info').css('height', '240px');
     $(this).find('.screenshot-top').animate({height: '60px'}, 500);
   }, function() {
@@ -30,7 +31,7 @@ $(function() {
   });
 
   // Animate email me link on load
-  $('a.button').animate({ fontSize: '72' }, 2000);
+  // $('a.button').animate({ fontSize: '72' }, 2000);
 
   // animate email link on hover
   $('a.button').hover(function(ev) {
