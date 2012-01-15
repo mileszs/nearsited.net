@@ -125,6 +125,10 @@ body {
   color: #444;
 }
 
+em {
+  font-style: italic;
+}
+
 a, a:visited {
   color: #308126;
   text-decoration: none;
@@ -195,6 +199,18 @@ section#hello h1, section#projects h1, section#contact h1 {
   height: 108px;
   text-align: center;
   margin: 40px 0;
+}
+
+section#hello h1 {
+  font-size: 48px;
+  height: 48px;
+}
+
+section#hello h1 span.title-emphasis {
+  font-size: 20px;
+  vertical-align: top;
+  padding-bottom: 0;
+  border-bottom: 4px solid #444;
 }
 
 section#hello p, section#contact p {
