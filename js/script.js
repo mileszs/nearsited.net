@@ -22,13 +22,13 @@ $(function() {
     $.scrollTo($(this).attr('href'), 1000);
   });
 
-  // at the very top, make header bg transparent
-  $(document).scroll(function(ev) {
-    $('header').css('background-color', '#fff');
-    if ($('header').position().top <= 4) {
-      $('header').css('background-color', 'transparent');
-    }
-  });
+  // // at the very top, make header bg transparent
+  // $(document).scroll(function(ev) {
+  //   $('header').css('background-color', '#fff');
+  //   if ($('header').position().top <= 4) {
+  //     $('header').css('background-color', 'transparent');
+  //   }
+  // });
 
   // Animate email me link on load
   // $('a.button').animate({ fontSize: '72' }, 2000);

@@ -62,12 +62,6 @@ $(function() {
     $.scrollTo($(this).attr('href'), 1000);
   });
 
-  $(document).scroll(function(ev) {
-    $('header').css('background-color', '#fff');
-    if ($('header').position().top <= 4) {
-      $('header').css('background-color', 'transparent');
-    }
-  });
 
 
   $('a.button').hover(function(ev) {
