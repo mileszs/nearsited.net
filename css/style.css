@@ -130,17 +130,17 @@ em {
 }
 
 a, a:visited {
-  color: #308126;
+  color: #000080;
   text-decoration: none;
   /* font-weight: bold; */
 }
 
 a:hover {
-  color: #49B900;
+  color: #0000ff;
 }
 
 #header-border {
-  border-top: 4px solid #49B900;
+  border-top: 4px solid #000080;
   position: fixed;
   top: 0;
   left: 0;
@@ -162,31 +162,33 @@ header {
   -moz-border-bottom-left-radius: 15px;
   -webkit-border-bottom-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  border-top: 4px solid #49B900;
+  border-top: 4px solid #000080;
 }
 
 header nav {
   display: inline;
-  float: left;
-  font-size: 20px;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 header nav ul {
-  margin-top: 18px;
+  margin-top: 28px;
 }
 
 header nav ul li {
   list-style-type: none;
   display: inline;
+  margin-right: 20px;
 }
 
 header div {
   display: inline;
-  float: right;
+  float: left;
 }
 
 header img {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 section {
@@ -194,35 +196,35 @@ section {
 }
 
 section#hello h1, section#projects h1, section#contact h1 {
-  font-family: 'Sigmar One', arial, serif;
-  font-size: 108px;
-  height: 108px;
-  text-align: center;
-  margin: 40px 0;
-}
-
-section#hello h1 {
+  font-family: 'Josefin Slab', serif;
   font-size: 48px;
   height: 48px;
 }
 
-section#hello h1 span.title-emphasis {
-  font-size: 20px;
-  vertical-align: top;
-  padding-bottom: 0;
-  border-bottom: 4px solid #444;
+section#projects h1 {
+  margin-left: 10px;
 }
 
-section#hello p, section#contact p {
+section#contact h1 {
+  margin-left: -15px;
+}
+
+section#hello h1 span.title-emphasis {
+  font-weight: bold;
+  font-style: italic;
+}
+
+section#hello p {
   text-align: left;
   padding: 20px;
-  margin: 20px auto;
-  width: 600px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 section#contact p {
   margin: 0 auto;
   width: 100%;
+  padding: 20px;
 }
 
 span.my-name {
@@ -230,15 +232,15 @@ span.my-name {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
-section#hello, section#contact {
+section#hello {
   padding-top: 200px;
 }
 
 .screenshot-row {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .screenshot {
@@ -246,9 +248,9 @@ section#hello, section#contact {
   height: 300px;
   overflow: hidden;
   color: #efefef;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  /* -moz-border-radius: 15px; */
+  /* -webkit-border-radius: 15px; */
+  /* border-radius: 15px; */
   -moz-box-shadow: 0 0 1px #888;
   -webkit-box-shadow: 0 0 1px #888;
   box-shadow: 0 0 1px #888;
@@ -275,13 +277,13 @@ section#hello, section#contact {
   font-size: 24px;
 }
 
-section#projects a, section#projects a:visited {
-  color: #49B900;
+section#projects .screenshot-blurb a, section#projects .screenshot-blurb a:visited {
+  color: #999999;
   text-decoration: none;
 }
 
-section#projects a:hover {
-  color: #308126;
+section#projects .screenshot-blurb a:hover {
+  color: #000080;
 }
 
 .screenshot-more {
@@ -309,6 +311,17 @@ footer p {
 section#hello p.button-holder,
 section#contact p.button-holder { 
   text-align: center;
+}
+
+section#contact p span.icon {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+section#contact p span.icon img {
+  vertical-align: middle;
 }
 
 /* #Forms
