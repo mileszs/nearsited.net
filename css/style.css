@@ -119,9 +119,7 @@ a:hover { color: #036; }
 
 body {
   background: #fff url(../img/eye_chart.png) no-repeat right 65px fixed;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font: 400 20px/30px "vollkorn";
   color: #444;
 }
 
@@ -196,9 +194,7 @@ section {
 }
 
 section#hello h1, section#projects h1, section#contact h1 {
-  font-family: 'Josefin Slab', serif;
-  font-size: 48px;
-  height: 48px;
+  font: 300 48px/48px "vollkorn";
 }
 
 section#projects h1 {
@@ -207,11 +203,6 @@ section#projects h1 {
 
 section#contact h1 {
   margin-left: -15px;
-}
-
-section#hello h1 span.title-emphasis {
-  font-weight: bold;
-  font-style: italic;
 }
 
 section#hello p {
