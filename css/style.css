@@ -83,19 +83,6 @@ a:hover { color: #036; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-@media all and (orientation:portrait) {
-
-}
-
-@media all and (orientation:landscape) {
-
-}
-
-@media screen and (max-device-width: 480px) {
-
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-}
-
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
   -ms-filter: none !important; }
@@ -136,87 +123,55 @@ a, a:visited {
 a:hover {
   color: #0000ff;
 }
-
-#header-border {
-  border-top: 4px solid #000080;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 header {
   position: fixed;
   top: 0;
-  height: 40px;
-  width: 100%;
-  padding: 20px;
+  width: 96%;
+  padding: 2%;
   z-index: 10;
   border-top: 4px solid #000080;
   background-color: #fff;
-  /* -moz-box-shadow:    0 1px 5px 0px #666; */
-  /* -webkit-box-shadow: 0 1px 5px 0px #666; */
-  /* box-shadow:         0 1px 5px 0px #666; */
+  background-color:rgba(255,255,255,0.8);
 }
+	header div {
+	  margin-top: 0;
+	}
+	header nav {
+	  display: inline;
+	  font-size: 18px;
+	  font-weight: bold;
+	}
+		header nav ul {
+		  margin-top: 8px;
+		}
+			header nav ul li {
+			  list-style-type: none;
+			  display: inline;
+			}
 
-header div {
-  margin-top: 0;
-}
-
-header nav {
-  display: inline;
-  float: right;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-header nav ul {
-  margin-top: 8px;
-}
-
-header nav ul li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 20px;
-}
-
-header #logo {
-  display: inline;
-  float: left;
-}
-
-header img {
-  margin-left: 10px;
-}
+	header #logo {
+	  display: inline;
+	  float: left;
+	}
+		header img {
+		  margin-left: 10px;
+		}
 
 section {
   min-height: 768px
 }
-
-section#hello h1, section#projects h1, section#contact h1 {
-  font: 300 48px/48px "vollkorn";
-}
-
-section#projects h1 {
-  margin-left: 10px;
-}
-
-section#contact h1 {
-  margin-left: -15px;
-}
-
-section#hello p {
-  text-align: left;
-  padding: 20px;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-section#contact p {
-  margin: 0 auto;
-  width: 100%;
-  padding: 20px;
-}
+	h1{
+	  font: 300 48px/48px "vollkorn";
+	}
+	#hello p {
+	  text-align: left;
+	  font-size: 24px;
+	  line-height: 28px;
+	}
+	#contact p {
+	  width: 92%;
+	  padding: 0 4%;
+	}
 
 span.my-name {
   font-weight: bold;
@@ -443,4 +398,173 @@ section#contact p span.icon img {
 		padding-right: 0 !important;
 		text-align: center; }
 
+/*=== Mobile First Responsive Layout ===*/
+/*======================================*/
+
+/*=== Small Layout (320px) ===*/
+@media screen and (min-width: 320px){
+	#container{
+		width:94%;
+		padding:3%;
+		margin: 0 auto;
+	}
+		h1{
+			font-size: 1.4em;
+			margin-left:0;
+		}
+
+	/*=== Header / Main Nav ===*/
+	header{
+		height:100px;
+		position: absolute;
+		top:0;
+	}
+		#logo img{
+			margin-left: 0px;
+		}
+		.main-nav{
+			float:left;
+			clear:left;
+			width: 100%;
+		}
+			.main-nav li{
+				float:left;
+				text-align: center;
+				width:30%;
+				margin:5px 2% 0;
+			}
+				.main-nav li:first-child{
+					margin-left:0;
+				}
+				.main-nav li:last-child{
+					margin-right:0;
+				}
+
+	/*=== Hello ==*/
+	#hello p{
+		font-size: .9em;
+	}
+		#intro{
+			width:92%;
+			padding:4%;
+		}
+
+	/*=== Projects ===*/
+	#projects h1{
+		margin-bottom: 10px;
+	}
+	#projects > p{
+		width:92%;
+		margin:0 4%;
+	}
+	#projects .screenshot{
+		width:92%;
+		background-size: 100%;
+		margin:0 auto 50px;
+		max-width: 460px;
+	}
+
+	/*=== Contact ===*/
+	#contact .grid_5{
+		width:92%;
+		margin:0 4%;
+	}
+		#form1 > input, textarea{
+			width:96%;
+			padding:2%;
+			margin:0 0 20px 0;
+		}
+
+
+}
+
+/*=== Medium Layout (670px) ===*/
+@media screen and (min-width: 670px){
+	#container{
+		width:94%;
+		padding:3%;
+		margin: 0 auto;
+		max-width: 700px;
+	}
+		h1{
+			font-size: 2em;
+			margin-left:0;
+		}
+		/*=== Header / Main Nav ===*/
+		header{
+			height:40px;
+			position: fixed;
+			top:0;
+		}
+			header .container_12{
+				max-width: 600px;
+				margin:0 auto;
+			}
+			.main-nav{
+				float:right;
+				clear:none;
+				width: 55%;
+			}
+
+		/*=== Projects ===*/
+		#projects .screenshot{
+			float:left;
+			width:42%;
+			background-size: 100%;
+			margin:0 4% 50px;
+		}
+
+}
+
+/*=== Medium Layout (960px) ===*/
+@media screen and (min-width: 960px){
+
+	#container{
+		width:94%;
+		padding:3%;
+		margin: 0 auto;
+		max-width: 960px;
+	}
+		h1{
+			font-size: 2.5em;
+			margin-left:0;
+		}
+		
+		/*=== Hello ==*/
+		#hello{
+			max-width: 860px;
+			margin: 0 auto;
+		}
+			#hello p{
+				font-size: 24px;
+			}
+
+		/*=== Projects ===*/
+		#projects h1{
+			margin-left: 8px;
+		}
+		#projects .screenshot{
+			float:left;
+			width:31%;
+			background-size: 100%;
+			margin:0 1% 50px;
+		}
+
+		/*=== Contact ===*/
+		#contact{
+			max-width: 860px;
+			margin: 0 auto;
+		}
+			#contact .grid_5{
+				float: left;
+				width:41%;
+				margin:0 2% 0 2%;
+			}
+			#contact .grid_5:last-child{
+				float: left;
+				width:50%;
+				margin:0 2% 0 3%;
+			}
+
+}
 
