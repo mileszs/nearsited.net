@@ -127,7 +127,7 @@ header {
   position: fixed;
   top: 0;
   width: 96%;
-  padding: 2%;
+  padding: 1.5% 2%;
   z-index: 10;
   border-top: 4px solid #000080;
   background-color: #fff;
@@ -137,9 +137,11 @@ header {
 	  margin-top: 0;
 	}
 	header nav {
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	  display: inline;
 	  font-size: 18px;
 	  font-weight: bold;
+	  -webkit-font-smoothing: antialiased;
 	}
 		header nav ul {
 		  margin-top: 8px;
@@ -161,8 +163,14 @@ section {
   min-height: 768px
 }
 	h1{
-	  font: 300 48px/48px "vollkorn";
+	  font: 300 48px/48px 'Josefin Slab', "vollkorn", serif;
+	  -webkit-font-smoothing: antialiased;
+		line-height: 48px;
 	}
+		.title-emphasis {
+			font-weight: bold;
+			font-style: italic;
+		}
 	#hello p {
 	  text-align: left;
 	  font-size: 24px;
@@ -182,7 +190,7 @@ section {
 }
 
 section#hello {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .screenshot-row {
@@ -431,7 +439,7 @@ section#contact p span.icon img {
 				float:left;
 				text-align: center;
 				width:30%;
-				margin:5px 2% 0;
+				margin:0 2%;
 			}
 				.main-nav li:first-child{
 					margin-left:0;
@@ -474,6 +482,12 @@ section#contact p span.icon img {
 			padding:2%;
 			margin:0 0 20px 0;
 		}
+			textarea{
+				resize:vertical;
+			}
+			#form1 #saveForm{
+				width:100%;
+			}
 
 
 }
@@ -532,7 +546,7 @@ section#contact p span.icon img {
 		
 		/*=== Hello ==*/
 		#hello{
-			max-width: 860px;
+			max-width: 780px;
 			margin: 0 auto;
 		}
 			#hello p{
@@ -563,8 +577,13 @@ section#contact p span.icon img {
 			#contact .grid_5:last-child{
 				float: left;
 				width:50%;
-				margin:0 2% 0 3%;
+				margin:25px 2% 0 3%;
 			}
+				#form1 #saveForm{
+					width:55px;
+					height:30px;
+					line-height: 10px;
+				}
 
 }
 
