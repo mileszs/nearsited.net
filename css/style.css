@@ -415,7 +415,7 @@ section#contact p span.icon img {
 		margin: 0 auto;
 	}
 		h1{
-			font-size: 1.4em;
+			font-size: 2em;
 			margin-left:0;
 		}
 
@@ -498,10 +498,7 @@ section#contact p span.icon img {
 		margin: 0 auto;
 		max-width: 700px;
 	}
-		h1{
-			font-size: 2em;
-			margin-left:0;
-		}
+
 		/*=== Header / Main Nav ===*/
 		header{
 			height:40px;
