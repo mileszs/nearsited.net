@@ -71,4 +71,12 @@ $(function() {
     $('a.button').fadeTo('slow', 0.8);
     $('a span.bracket').fadeTo('fast', 1);
   });
+
+  window.onscroll = function() {
+    var yPos = ($(window).scrollTop() / 3) + 580;
+    var coords = '50% ' + yPos + 'px';
+    console.log(coords);
+    console.log(yPos);
+    $('section#hello').css({ backgroundPosition: coords });
+  };
 });
