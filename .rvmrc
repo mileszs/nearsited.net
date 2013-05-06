@@ -1,1 +1,1 @@
-rvm use ruby-1.9.2-head@nearsited.net --create
+rvm use ruby-1.9.3-p392@nearsited.net --create
